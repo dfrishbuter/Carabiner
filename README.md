@@ -1,8 +1,8 @@
-<img src="Assets/icon.png" alt="Networking" width=200/> 
+<img src="Assets/icon.png" alt="Carabiner" width=200/> 
 
-# Networking
+# Carabiner
 
-Networking is a network abstraction layer built on top of
+Carabiner is a network abstraction layer built on top of
 [Alamofire](https://github.com/Alamofire/Alamofire).
 
 ## Table of contents 📦
@@ -15,26 +15,26 @@ Networking is a network abstraction layer built on top of
 
 ### Xcode project or workspace
 
-To integrate Networking into your Xcode project as Swift Package:
+To integrate Carabiner into your Xcode project as Swift Package:
 1. Select "File -> Swift Packages -> Add Package Dependency..."
 2. Select project if you are using workspace
-3. Enter "https://projects.ronasit.com/ronas-it/ios/networking"
+3. Enter "https://projects.ronasit.com/ronas-it/ios/Carabiner"
 
 ### Swift Package Manager
 
-The Swift Package Manager is a tool for automating the distribution of Swift code and is integrated into the swift compiler. Networking supports its usage on iOS platform.
+The Swift Package Manager is a tool for automating the distribution of Swift code and is integrated into the swift compiler. Carabiner supports its usage on iOS platform.
 
-Once you have your Swift package set up, adding Networking as a dependency is as easy as adding it to the dependencies value of your Package.swift.
+Once you have your Swift package set up, adding Carabiner as a dependency is as easy as adding it to the dependencies value of your Package.swift.
 
 ```swift
 dependencies: [
-    .package(url: "https://projects.ronasit.com/ronas-it/ios/networking.git", .upToNextMajor(from: "2.0.0"))
+    .package(url: "https://projects.ronasit.com/ronas-it/ios/Carabiner.git", .upToNextMajor(from: "2.0.0"))
 ]
 ```
 
 ## Features ✔️
 
-- [⚡ Networking](#%e2%9a%a1-networking)
+- [⚡ Carabiner](#%e2%9a%a1-Carabiner)
   - [Table of contents 📦](#table-of-contents-%f0%9f%93%a6)
   - [Installation 🎬](#installation-%f0%9f%8e%ac)
   - [Features ✔️](#features-%e2%9c%94%ef%b8%8f)
@@ -61,7 +61,7 @@ dependencies: [
 To make requests with specific endpoint you need to subclass `NetworkService`:
 
 ```swift
-import Networking
+import Carabiner
 
 final class AuthService: NetworkService, AuthServiceProtocol {
 
@@ -107,7 +107,7 @@ final class MediaService: NetworkService, MediaServiceProtocol {
 
 ### Supported response types
 
-Networking supports  `Decodable`, `Data`, `String`, `[String: Any]` and empty
+Carabiner supports  `Decodable`, `Data`, `String`, `[String: Any]` and empty
 response type.
 
 Also, you can use response with
@@ -139,7 +139,7 @@ how the request should be sent.
 #### Usage
 
 ```swift
-import Networking
+import Carabiner
 
 // Customize default values for all endpoints using extension
 
@@ -237,7 +237,7 @@ see [error handling](#error-handling) for more.
 
 ### Reachability
 
-`Networking` has built-in `ReachabilityService` to observe the internet
+`Carabiner` has built-in `ReachabilityService` to observe the internet
 connection status via Combine subscriptions.
 
 #### Reachability Usage
@@ -294,7 +294,7 @@ built-in `TokenRequestAdapter`. See [automatic token refreshing](#automatic-toke
 1. Implement your custom request adapter:
 
     ```swift
-    import Networking
+    import Carabiner
     import UIKit.UIDevice
 
     final class GeneralRequestAdapter: RequestAdapter {
@@ -349,7 +349,7 @@ Built-in automatic token refreshing also implemented using custom error handler.
 1. Create your own error handler:
 
 ```swift
-import Networking
+import Carabiner
 
 final class LoggingErrorHandler: ErrorHandler {
     func handleError(with payload: ErrorPayload, completion: @escaping (ErrorHandlingResult) -> Void) {
@@ -451,7 +451,7 @@ enum ProfileEndpoint: Endpoint {
 
 ### Automatic Token Refreshing and Request Retrying
 
-`Networking` can automatically refresh access tokens and retry failed requests.
+`Carabiner` can automatically refresh access tokens and retry failed requests.
 
 There are three components of this feature:
 
@@ -467,7 +467,7 @@ access token and access token refreshing logic
 1. Create your service and implement `AccessTokenSupervisor` protocol:
 
     ```swift
-    import Networking
+    import Carabiner
 
     protocol SessionServiceProtocol: AccessTokenSupervisor {}
 
