@@ -538,3 +538,12 @@ require authorization. For these endpoints you'll still receive unauthorized
 errors.
 
 To learn more, please check example project.
+
+# Authors 🖌
+
+Dmitry Frishbuter, dmitry.frishbuter@gmail.com
+Nikita Zatsepilov, nzatsepilov@gmail.com
+
+# License 📃
+
+Carabiner is available under the MIT license. See the LICENSE file for more info.
