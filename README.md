@@ -542,6 +542,7 @@ To learn more, please check example project.
 # Authors 🖌
 
 Dmitry Frishbuter, dmitry.frishbuter@gmail.com
+
 Nikita Zatsepilov, nzatsepilov@gmail.com
 
 # License 📃
