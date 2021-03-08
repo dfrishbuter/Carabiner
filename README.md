@@ -547,4 +547,4 @@ Nikita Zatsepilov, nzatsepilov@gmail.com
 
 # License 📋
 
-Carabiner is available under the MIT license. See the LICENSE file for more info.
+Carabiner is available under the MIT license. See the [LICENSE](./LICENSE.md) for more info.
