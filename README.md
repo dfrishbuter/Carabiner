@@ -18,7 +18,7 @@ Carabiner is a network abstraction layer built on top of
 To integrate Carabiner into your Xcode project as Swift Package:
 1. Select "File -> Swift Packages -> Add Package Dependency..."
 2. Select project if you are using workspace
-3. Enter "https://projects.ronasit.com/ronas-it/ios/Carabiner"
+3. Enter "https://github.com/dfrishbuter/Carabiner"
 
 ### Swift Package Manager
 
