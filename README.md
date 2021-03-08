@@ -539,12 +539,12 @@ errors.
 
 To learn more, please check example project.
 
-# Authors 🖌
+# Authors 👨‍💻
 
 Dmitry Frishbuter, dmitry.frishbuter@gmail.com
 
 Nikita Zatsepilov, nzatsepilov@gmail.com
 
-# License 📃
+# License 📋
 
 Carabiner is available under the MIT license. See the LICENSE file for more info.
